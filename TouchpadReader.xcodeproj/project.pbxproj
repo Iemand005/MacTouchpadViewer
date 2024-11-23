@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A62C7FB2CF16D1C004A73EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A62C7FA2CF16D1C004A73EE /* Cocoa.framework */; };
+		0A62C8052CF16D1C004A73EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C8032CF16D1C004A73EE /* InfoPlist.strings */; };
+		0A62C8072CF16D1C004A73EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C8062CF16D1C004A73EE /* main.m */; };
+		0A62C80B2CF16D1C004A73EE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C8092CF16D1C004A73EE /* Credits.rtf */; };
+		0A62C80E2CF16D1C004A73EE /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C80D2CF16D1C004A73EE /* TRAppDelegate.m */; };
+		0A62C8112CF16D1C004A73EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C80F2CF16D1C004A73EE /* MainMenu.xib */; };
+		0A62C8192CF16D1C004A73EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A62C8182CF16D1C004A73EE /* SenTestingKit.framework */; };
+		0A62C81A2CF16D1C004A73EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A62C7FA2CF16D1C004A73EE /* Cocoa.framework */; };
+		0A62C8222CF16D1D004A73EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C8202CF16D1D004A73EE /* InfoPlist.strings */; };
+		0A62C8252CF16D1D004A73EE /* TouchpadReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C8242CF16D1D004A73EE /* TouchpadReaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A62C81B2CF16D1D004A73EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A62C7EF2CF16D1C004A73EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A62C7F62CF16D1C004A73EE;
+			remoteInfo = TouchpadReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A62C7F72CF16D1C004A73EE /* TouchpadReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchpadReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A62C7FA2CF16D1C004A73EE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0A62C7FD2CF16D1C004A73EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A62C7FE2CF16D1C004A73EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A62C7FF2CF16D1C004A73EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A62C8022CF16D1C004A73EE /* TouchpadReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchpadReader-Info.plist"; sourceTree = "<group>"; };
+		0A62C8042CF16D1C004A73EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A62C8062CF16D1C004A73EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A62C8082CF16D1C004A73EE /* TouchpadReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchpadReader-Prefix.pch"; sourceTree = "<group>"; };
+		0A62C80A2CF16D1C004A73EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0A62C80C2CF16D1C004A73EE /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		0A62C80D2CF16D1C004A73EE /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		0A62C8102CF16D1C004A73EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0A62C8172CF16D1C004A73EE /* TouchpadReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchpadReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A62C8182CF16D1C004A73EE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A62C81F2CF16D1D004A73EE /* TouchpadReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchpadReaderTests-Info.plist"; sourceTree = "<group>"; };
+		0A62C8212CF16D1D004A73EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A62C8232CF16D1D004A73EE /* TouchpadReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchpadReaderTests.h; sourceTree = "<group>"; };
+		0A62C8242CF16D1D004A73EE /* TouchpadReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchpadReaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A62C7F42CF16D1C004A73EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A62C7FB2CF16D1C004A73EE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A62C8132CF16D1C004A73EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A62C8192CF16D1C004A73EE /* SenTestingKit.framework in Frameworks */,
+				0A62C81A2CF16D1C004A73EE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A62C7EE2CF16D1C004A73EE = {
+			isa = PBXGroup;
+			children = (
+				0A62C8002CF16D1C004A73EE /* TouchpadReader */,
+				0A62C81D2CF16D1D004A73EE /* TouchpadReaderTests */,
+				0A62C7F92CF16D1C004A73EE /* Frameworks */,
+				0A62C7F82CF16D1C004A73EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A62C7F82CF16D1C004A73EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C7F72CF16D1C004A73EE /* TouchpadReader.app */,
+				0A62C8172CF16D1C004A73EE /* TouchpadReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A62C7F92CF16D1C004A73EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C7FA2CF16D1C004A73EE /* Cocoa.framework */,
+				0A62C8182CF16D1C004A73EE /* SenTestingKit.framework */,
+				0A62C7FC2CF16D1C004A73EE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A62C7FC2CF16D1C004A73EE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C7FD2CF16D1C004A73EE /* AppKit.framework */,
+				0A62C7FE2CF16D1C004A73EE /* CoreData.framework */,
+				0A62C7FF2CF16D1C004A73EE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0A62C8002CF16D1C004A73EE /* TouchpadReader */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C80C2CF16D1C004A73EE /* TRAppDelegate.h */,
+				0A62C80D2CF16D1C004A73EE /* TRAppDelegate.m */,
+				0A62C80F2CF16D1C004A73EE /* MainMenu.xib */,
+				0A62C8012CF16D1C004A73EE /* Supporting Files */,
+			);
+			path = TouchpadReader;
+			sourceTree = "<group>";
+		};
+		0A62C8012CF16D1C004A73EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C8022CF16D1C004A73EE /* TouchpadReader-Info.plist */,
+				0A62C8032CF16D1C004A73EE /* InfoPlist.strings */,
+				0A62C8062CF16D1C004A73EE /* main.m */,
+				0A62C8082CF16D1C004A73EE /* TouchpadReader-Prefix.pch */,
+				0A62C8092CF16D1C004A73EE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A62C81D2CF16D1D004A73EE /* TouchpadReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C8232CF16D1D004A73EE /* TouchpadReaderTests.h */,
+				0A62C8242CF16D1D004A73EE /* TouchpadReaderTests.m */,
+				0A62C81E2CF16D1D004A73EE /* Supporting Files */,
+			);
+			path = TouchpadReaderTests;
+			sourceTree = "<group>";
+		};
+		0A62C81E2CF16D1D004A73EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A62C81F2CF16D1D004A73EE /* TouchpadReaderTests-Info.plist */,
+				0A62C8202CF16D1D004A73EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A62C7F62CF16D1C004A73EE /* TouchpadReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A62C8282CF16D1D004A73EE /* Build configuration list for PBXNativeTarget "TouchpadReader" */;
+			buildPhases = (
+				0A62C7F32CF16D1C004A73EE /* Sources */,
+				0A62C7F42CF16D1C004A73EE /* Frameworks */,
+				0A62C7F52CF16D1C004A73EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchpadReader;
+			productName = TouchpadReader;
+			productReference = 0A62C7F72CF16D1C004A73EE /* TouchpadReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A62C8162CF16D1C004A73EE /* TouchpadReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A62C82B2CF16D1D004A73EE /* Build configuration list for PBXNativeTarget "TouchpadReaderTests" */;
+			buildPhases = (
+				0A62C8122CF16D1C004A73EE /* Sources */,
+				0A62C8132CF16D1C004A73EE /* Frameworks */,
+				0A62C8142CF16D1C004A73EE /* Resources */,
+				0A62C8152CF16D1C004A73EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A62C81C2CF16D1D004A73EE /* PBXTargetDependency */,
+			);
+			name = TouchpadReaderTests;
+			productName = TouchpadReaderTests;
+			productReference = 0A62C8172CF16D1C004A73EE /* TouchpadReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A62C7EF2CF16D1C004A73EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Lasse Lauwerys";
+			};
+			buildConfigurationList = 0A62C7F22CF16D1C004A73EE /* Build configuration list for PBXProject "TouchpadReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A62C7EE2CF16D1C004A73EE;
+			productRefGroup = 0A62C7F82CF16D1C004A73EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A62C7F62CF16D1C004A73EE /* TouchpadReader */,
+				0A62C8162CF16D1C004A73EE /* TouchpadReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A62C7F52CF16D1C004A73EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A62C8052CF16D1C004A73EE /* InfoPlist.strings in Resources */,
+				0A62C80B2CF16D1C004A73EE /* Credits.rtf in Resources */,
+				0A62C8112CF16D1C004A73EE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A62C8142CF16D1C004A73EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A62C8222CF16D1D004A73EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A62C8152CF16D1C004A73EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A62C7F32CF16D1C004A73EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A62C8072CF16D1C004A73EE /* main.m in Sources */,
+				0A62C80E2CF16D1C004A73EE /* TRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A62C8122CF16D1C004A73EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A62C8252CF16D1D004A73EE /* TouchpadReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A62C81C2CF16D1D004A73EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A62C7F62CF16D1C004A73EE /* TouchpadReader */;
+			targetProxy = 0A62C81B2CF16D1D004A73EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A62C8032CF16D1C004A73EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A62C8042CF16D1C004A73EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A62C8092CF16D1C004A73EE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A62C80A2CF16D1C004A73EE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0A62C80F2CF16D1C004A73EE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A62C8102CF16D1C004A73EE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0A62C8202CF16D1D004A73EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A62C8212CF16D1D004A73EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A62C8262CF16D1D004A73EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A62C8272CF16D1D004A73EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A62C8292CF16D1D004A73EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchpadReader/TouchpadReader-Prefix.pch";
+				INFOPLIST_FILE = "TouchpadReader/TouchpadReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A62C82A2CF16D1D004A73EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchpadReader/TouchpadReader-Prefix.pch";
+				INFOPLIST_FILE = "TouchpadReader/TouchpadReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A62C82C2CF16D1D004A73EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TouchpadReader.app/Contents/MacOS/TouchpadReader";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchpadReader/TouchpadReader-Prefix.pch";
+				INFOPLIST_FILE = "TouchpadReaderTests/TouchpadReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0A62C82D2CF16D1D004A73EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TouchpadReader.app/Contents/MacOS/TouchpadReader";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchpadReader/TouchpadReader-Prefix.pch";
+				INFOPLIST_FILE = "TouchpadReaderTests/TouchpadReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A62C7F22CF16D1C004A73EE /* Build configuration list for PBXProject "TouchpadReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A62C8262CF16D1D004A73EE /* Debug */,
+				0A62C8272CF16D1D004A73EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A62C8282CF16D1D004A73EE /* Build configuration list for PBXNativeTarget "TouchpadReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A62C8292CF16D1D004A73EE /* Debug */,
+				0A62C82A2CF16D1D004A73EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A62C82B2CF16D1D004A73EE /* Build configuration list for PBXNativeTarget "TouchpadReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A62C82C2CF16D1D004A73EE /* Debug */,
+				0A62C82D2CF16D1D004A73EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A62C7EF2CF16D1C004A73EE /* Project object */;
+}
