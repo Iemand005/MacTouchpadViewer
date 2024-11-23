@@ -10,4 +10,8 @@
 
 @interface TRTouchpadView : NSView
 
+//@property NSPointArray touches;
+@property NSSet *touches;
+@property NSInteger touchCount;
+
 @end
