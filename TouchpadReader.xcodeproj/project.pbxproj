@@ -17,6 +17,8 @@
 		0A62C81A2CF16D1C004A73EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A62C7FA2CF16D1C004A73EE /* Cocoa.framework */; };
 		0A62C8222CF16D1D004A73EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C8202CF16D1D004A73EE /* InfoPlist.strings */; };
 		0A62C8252CF16D1D004A73EE /* TouchpadReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C8242CF16D1D004A73EE /* TouchpadReaderTests.m */; };
+		0A62C82E2CF16DA8004A73EE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A62C7FD2CF16D1C004A73EE /* AppKit.framework */; };
+		0A62C8312CF16E46004A73EE /* TRTouchpadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C8302CF16E46004A73EE /* TRTouchpadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0A62C8212CF16D1D004A73EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A62C8232CF16D1D004A73EE /* TouchpadReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchpadReaderTests.h; sourceTree = "<group>"; };
 		0A62C8242CF16D1D004A73EE /* TouchpadReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchpadReaderTests.m; sourceTree = "<group>"; };
+		0A62C82F2CF16E46004A73EE /* TRTouchpadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTouchpadView.h; sourceTree = "<group>"; };
+		0A62C8302CF16E46004A73EE /* TRTouchpadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTouchpadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A62C82E2CF16DA8004A73EE /* AppKit.framework in Frameworks */,
 				0A62C7FB2CF16D1C004A73EE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +121,8 @@
 			children = (
 				0A62C80C2CF16D1C004A73EE /* TRAppDelegate.h */,
 				0A62C80D2CF16D1C004A73EE /* TRAppDelegate.m */,
+				0A62C82F2CF16E46004A73EE /* TRTouchpadView.h */,
+				0A62C8302CF16E46004A73EE /* TRTouchpadView.m */,
 				0A62C80F2CF16D1C004A73EE /* MainMenu.xib */,
 				0A62C8012CF16D1C004A73EE /* Supporting Files */,
 			);
@@ -264,6 +271,7 @@
 			files = (
 				0A62C8072CF16D1C004A73EE /* main.m in Sources */,
 				0A62C80E2CF16D1C004A73EE /* TRAppDelegate.m in Sources */,
+				0A62C8312CF16E46004A73EE /* TRTouchpadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
