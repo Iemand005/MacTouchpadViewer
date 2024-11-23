@@ -53,6 +53,8 @@
 		0A62C8242CF16D1D004A73EE /* TouchpadReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchpadReaderTests.m; sourceTree = "<group>"; };
 		0A62C82F2CF16E46004A73EE /* TRTouchpadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTouchpadView.h; sourceTree = "<group>"; };
 		0A62C8302CF16E46004A73EE /* TRTouchpadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTouchpadView.m; sourceTree = "<group>"; };
+		0A62C8322CF18A59004A73EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0A62C8332CF18B89004A73EE /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Screenshot.png; path = ../../../Pictures/Screenshots/Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,8 @@
 		0A62C7EE2CF16D1C004A73EE = {
 			isa = PBXGroup;
 			children = (
+				0A62C8322CF18A59004A73EE /* README.md */,
+				0A62C8332CF18B89004A73EE /* Screenshot.png */,
 				0A62C8002CF16D1C004A73EE /* TouchpadReader */,
 				0A62C81D2CF16D1D004A73EE /* TouchpadReaderTests */,
 				0A62C7F92CF16D1C004A73EE /* Frameworks */,

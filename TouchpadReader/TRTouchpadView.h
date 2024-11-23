@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+enum {
+    TRTouchpadViewScalingPointsToPixels,
+    TRTouchpadViewScalingTrueSize
+};
+typedef NSUInteger TRTouchpadViewScaling;
+
 @interface TRTouchpadView : NSView
 
-//@property NSPointArray touches;
 @property NSSet *touches;
-@property NSInteger touchCount;
+@property TRTouchpadViewScaling viewScaling;
+
 
 @end

@@ -21,51 +21,28 @@
 
 - (void)awakeFromNib
 {
-    NSLog(@"I woke from nicb");
     [self setAcceptsTouchEvents:YES];
-    [self drawCircle:NSMakeRect(0, 0, 100, 100)];
+    [self setViewScaling:TRTouchpadViewScalingTrueSize];
 }
 
 - (void)touchesBeganWithEvent:(NSEvent *)event
 {
-    NSLog(@"Yup they did");
-    //[event locationInWindow];
-//    [event pressure];
-    NSSet *touches = [event touchesMatchingPhase:NSTouchPhaseBegan inView:self];
-    for (NSTouch *touch in touches) {
-        NSPoint fraction = [touch normalizedPosition];
-        NSSize whole = touch.deviceSize;
-        NSPoint wholeInches = {whole.width / 72.0, whole.height / 72.0};
-        NSPoint pos = wholeInches;
-        pos.x *= fraction.x;
-        pos.y *= fraction.y;
-        NSLog(@"%s: Finger is touching %g inches right and %g inches up "
-              @"from lower left corner of trackpad.", __func__, fraction.x, fraction.y);
-    }
+    [self touchesChangedWithEvent:event];
 }
 
 - (void)touchesMovedWithEvent:(NSEvent *)event
 {
-    NSSet *touches = [event touchesMatchingPhase:NSTouchPhaseMoved inView:self];
-    for (NSTouch *touch in touches) {
-        NSPoint fraction = touch.normalizedPosition;
-        NSLog(@"%s: Finger is touching %g inches right and %g inches up "
-              @"from lower left corner of trackpad.", __func__, fraction.x, fraction.y);
-        NSRect rect;
-        rect.origin = fraction;
-        rect.size.width = 10;
-        rect.size.height = 10;
-        [self drawCircle:rect];
-    }
-    NSSet *allTouches = [event touchesMatchingPhase:NSTouchPhaseAny inView:self];
-    [self setTouches:allTouches];
-    [self setNeedsDisplay:YES];
-//    [self setTouchCount:[allTouches count]];
-//    NSPointArray points = calloc(, sizeof(NSPoint));
-//    for (int i = 0; i < [allTouches count]; <#increment#>) {
-//        <#statements#>
-//    }
-//    [self setTouches:];
+    [self touchesChangedWithEvent:event];
+}
+
+- (void)touchesCancelledWithEvent:(NSEvent *)event
+{
+    [self touchesChangedWithEvent:event];
+}
+
+- (void)touchesEndedWithEvent:(NSEvent *)event
+{
+    [self touchesChangedWithEvent:event];
 }
 
 - (void)touchesChangedWithEvent:(NSEvent *)event
@@ -78,6 +55,8 @@
 - (void)drawCircle:(NSRect)rect
 {
     NSColor *fillColor = [NSColor redColor];
+    rect.origin.x -= rect.size.width / 2;
+    rect.origin.y -= rect.size.height / 2;
     NSBezierPath *path = [NSBezierPath bezierPathWithOvalInRect:rect];
     [fillColor setFill];
     [path fill];
@@ -90,19 +69,47 @@
     NSLog(@"%li", [[self touches] count]);
     for (NSTouch *touch in [self touches]) {
         NSPoint fraction = touch.normalizedPosition;
-        fraction.x *= 10;
-        fraction.y *= 10;
+        NSSize deviceSize = touch.deviceSize;
+        
+        NSRect frame;
+        
+        switch ([self viewScaling]) {
+            case TRTouchpadViewScalingPointsToPixels:
+                frame.size = deviceSize; // It also gives x and y, what are these?
+                frame.origin = [[self window] frame].origin;
+                break;
+                
+            case TRTouchpadViewScalingTrueSize:
+            {
+                NSScreen *screen = [NSScreen mainScreen];
+                NSDictionary *description = [screen deviceDescription];
+                NSSize displayPixelSize = [[description objectForKey:NSDeviceSize] sizeValue];
+                CGSize displayPhysicalSize = CGDisplayScreenSize([[description objectForKey:@"NSScreenNumber"] unsignedIntValue]);
+                
+                NSSize displayDpi;
+                displayDpi.width = (displayPixelSize.width / displayPhysicalSize.width) * 25.4f;
+                displayDpi.height = (displayPixelSize.height / displayPhysicalSize.height) * 25.4f;
+                
+                NSSize dpiDifference;
+                dpiDifference.width = displayDpi.width / 72;
+                dpiDifference.height = displayDpi.height / 72;                
+                deviceSize.width *= dpiDifference.width;
+                deviceSize.height *= dpiDifference.height;
+                
+                frame.size = deviceSize;
+            }
+                break;
+        }
+        [[self window] setFrame:frame display:YES];
+        
+        fraction.x *= dirtyRect.size.width;
+        fraction.y *= dirtyRect.size.height;
         NSRect rect;
         rect.origin = fraction;
         rect.size.width = 10;
         rect.size.height = 10;
         [self drawCircle:rect];
     }
-    
-    NSColor *fillColor = [NSColor redColor];
-    NSBezierPath *path = [NSBezierPath bezierPathWithOvalInRect:NSMakeRect(0, 0, 100, 100)];
-    [fillColor setFill];
-    [path fill];
 }
 
 @end
